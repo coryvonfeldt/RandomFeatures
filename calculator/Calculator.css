@@ -1,0 +1,541 @@
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+/* Nav Bar */
+
+nav {
+    background: linear-gradient(35deg, #494949, #313131);
+    height: 6rem;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    left: 42%;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    width: 30rem;
+}
+
+nav li {
+    margin: 0rem 1rem;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+a:hover {
+    color: rgb(0, 110, 255);
+    font-size: 1.2rem;
+}
+
+
+.signUp {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(11, 113, 247);
+    border-radius: 0.8rem;
+    padding: 0.6rem 1.3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.signUp:hover {
+    background: linear-gradient(to right,  rgb(11, 113, 247) , rgb(0, 110, 255));
+}
+
+.signIn {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(11, 113, 247);
+    border-radius: 0.8rem;
+    padding: 0.6rem 1.3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.signIn:hover {
+    background: linear-gradient(to right,  rgb(11, 113, 247) , rgb(0, 110, 255));
+}
+
+
+/* Search */
+
+.search {
+    width: 40rem;
+    position: relative;
+    margin: 3rem auto;
+}
+
+.searchIcon {
+   position: absolute;
+   z-index: 1;
+   left: 0rem;
+   top: 50%;
+   transform: translate(5%, -50%);
+   height: 2.5rem;
+   margin: 0rem 2rem;
+   cursor: pointer;
+}
+
+.searchInput {
+    background: linear-gradient(35deg, #828585, #679e9e);
+    color: white;
+    width: 80%;
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 6rem;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+
+/* Sign Up Form */
+.signUpContainer {
+    display: none;
+    width: 28rem;
+    top: 8rem;
+    left: 5rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.form {
+    position: relative;
+}
+
+form {
+    background: linear-gradient(35deg, #494949, #313131);
+    border-radius: 1rem;
+    border: 1px solid rgb(0, 110, 255);
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1.5rem;
+}
+
+.firstName {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(0, 110, 255);
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    width: 12rem;
+    outline: none;
+}
+
+.lastName {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(0, 110, 255);
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    width: 12rem;
+    outline: none;
+}
+
+.emailInput {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(0, 110, 255);
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    width: 12rem;
+    outline: none;
+}
+.passwordInput {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(0, 110, 255);
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    width: 12rem;
+    outline: none;
+}
+
+.createAccount {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(0, 110, 255);
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    width: 12rem;
+    cursor: pointer;
+}
+
+.createAccount:hover {
+    background: linear-gradient(to right, rgb(11, 113, 247) , rgb(0, 110, 255));
+}
+
+.closeSignUpForm {
+    position: absolute;
+    top: 0rem;
+    right: 1.3rem;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+
+
+/* Sign In Form */
+.signInContainer {
+    display: none;
+    width: 28rem;
+    top: 8rem;
+    left: 5rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.logIn {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(0, 110, 255);
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    width: 12rem;
+    cursor: pointer;
+}
+
+.logIn:hover {
+    background: linear-gradient(to right, rgb(11, 113, 247) , rgb(0, 110, 255));
+}
+
+.closeLogInForm {
+    position: absolute;
+    top: 0rem;
+    right: 1.3rem;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+
+/* Calculator */
+
+.calculatorContainer {
+    width: 25rem;
+    background: linear-gradient(to right, rgb(28, 203, 243), rgb(92, 234, 158), rgb(28, 46, 164));
+    margin: 5rem;
+    position: relative;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.window {
+    width: 90%;
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+    background: rgb(217, 215, 215);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.equation {
+    font-size: 3rem;
+    z-index: 1;
+    position: absolute;
+    top: 1rem;;
+    right: 3rem;
+    color: rgb(22, 42, 160);
+    max-width: 18rem;
+    overflow: scroll;
+    height: 5rem;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3em;
+    padding-top: 1rem;
+}
+
+.seven {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.7rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.eight {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.7rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+} 
+
+.nine {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.7rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3rem;
+    padding-top: 1rem;
+}
+
+.four {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.8rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.five {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.8rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.six {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.8rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.row3 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3rem;
+    padding-top: 1rem;
+}
+
+.one {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.8rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.two {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.8rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.three {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.8rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.row4 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3rem;
+    padding-top: 1rem;
+}
+
+.zero {
+        margin: 0;
+        color: white;
+        list-style: none;
+        background: linear-gradient(35deg, #494949, #313131);
+        padding: 1rem 0.8rem 1rem 1.3rem;
+        border-radius: 50%;
+        font-size: 1.4rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-left: 1rem;
+        cursor: pointer;
+}
+
+.divide {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.8rem 1rem 1.7rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.multiply {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.8rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.row5 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.subtract {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 0.8rem 0.8rem 1rem 1.6rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0rem;
+    cursor: pointer;
+}
+
+.add {
+    margin: 0;
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    padding: 1rem 0.8rem 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.enter {
+    color: white;
+    list-style: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    border-radius: 3rem;
+    font-size: 0.6rem;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    width: 2rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+}
+
+
+.clear {
+    font-size: 0.6rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+    background: linear-gradient(35deg, #494949, #313131);
+    border-radius: 3rem;
+    display: block;
+    width: 2.5rem;
+    height: 1rem;
+    margin: 1rem auto;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+}

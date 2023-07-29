@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href='./Calculator.css' />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <script src="./Calculator.js" async ></script>
+    </head>
+    <body>
+        <header>
+        <nav>
+            <ul>
+                <li><button class="signUp">Sign Up</button></li>
+                <li><button class="signIn">Log In</button></li>
+                <li><a href="../Index/index.html" >Home</a></li>
+            </ul>
+        </nav>
+       </header>
+       <main>
+        
+        <!-- Sign Up Form -->
+        <div class="signUpContainer">
+            <div class="form">
+            <form>
+                <div class="flexBox">
+                    <input 
+                        type="text" 
+                        placeholder="First name" 
+                        class="firstName"
+                        required
+                    />
+                    <input  
+                        type="text"
+                        placeholder="Last name"
+                        class="lastName"
+                        required
+                    />
+                    <input  
+                        type="email"
+                        placeholder="Email"
+                        class="emailInput"
+                        required
+                    />
+                    <input  
+                        type="password"
+                        placeholder="Password"
+                        class="passwordInput"
+                        required
+                    />
+                    <button class="createAccount">Create Account</button>
+                    <p class="closeSignUpForm">X</p>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <!-- Sign In Form-->
+        <div class='signInContainer'>
+            <div class=".form">
+            <form>
+                <div class="flexBox">
+                    <input 
+                        type="email"
+                        placeholder="Email"
+                        class="emailInput"
+                        required
+                    />
+                    <input 
+                        type="password"
+                        placeholder="Password"
+                        class="passwordInput"
+                        required
+                    />
+                    <button class="logIn">Log In</button>
+                    <p class="closeLogInForm">X</p>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <!-- Calculator -->
+        <h1>Calculator</h1>
+        <div class="calculatorContainer">
+            <div class="window">
+                <h3 class="equation"></h3>
+            </div>
+            <ul class="row1">
+                <li class="seven" >7</li>
+                <li class="eight">8</li>
+                <li class="nine">9</li>
+            </ul>
+            <ul class="row2">
+                <li class="four">4</li>
+                <li class="five">5</li>
+                <li class="six">6</li>
+            </ul>
+            <ul class="row3">
+                <li class="one">1</li>
+                <li class="two">2</li>
+                <li class="three">3</li>
+            </ul>
+            <ul class="row4">
+                <li class="zero">0</li>
+                <li class="divide">/</li>
+                <li class="multiply">x</li>
+            </ul>
+            <ul class="row5">
+                <li class="subtract">-</li>
+                <li class="add">+</li>
+                <li class="enter">ENTER</li>
+            </ul>
+            <h3 class="clear">CLEAR</h3>
+        </div>
+
+        </main>
+    </body>
+</html>

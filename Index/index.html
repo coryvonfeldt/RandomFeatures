@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Front End Project
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css" >
+        <script src="./index.js" async></script>
+    </head>
+    <body>
+       <header>
+        <nav>
+            <ul>
+                <li><button class="signUp">Sign Up</button></li>
+                <li><button class="signIn">Log In</button></li>
+                <li><a href="../calculator/Calculator.html" >Calculator</a></li>
+            </ul>
+            <h1>Hello World!</h1>
+        </nav>
+       </header>
+       <main>
+        <div class="search">
+            <img src="./icons8-search-64.png" class="searchIcon"/>
+            <input 
+                type="text"
+                class="searchInput"
+            />
+        </div>    
+
+        <!-- Sign Up Form -->
+        <div class="signUpContainer">
+            <div class="form">
+            <form>
+                <div class="flexBox">
+                    <input 
+                        type="text" 
+                        placeholder="First name" 
+                        class="firstName"
+                        required
+                    />
+                    <input  
+                        type="text"
+                        placeholder="Last name"
+                        class="lastName"
+                        required
+                    />
+                    <input  
+                        type="email"
+                        placeholder="Email"
+                        class="emailInput"
+                        required
+                    />
+                    <input  
+                        type="password"
+                        placeholder="Password"
+                        class="passwordInput"
+                        required
+                    />
+                    <button class="createAccount">Create Account</button>
+                    <p class="closeSignUpForm">X</p>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <!-- Sign In Form-->
+        <div class='signInContainer'>
+            <div class=".form">
+            <form>
+                <div class="flexBox">
+                    <input 
+                        type="email"
+                        placeholder="Email"
+                        class="emailInput"
+                        required
+                    />
+                    <input 
+                        type="password"
+                        placeholder="Password"
+                        class="passwordInput"
+                        required
+                    />
+                    <button class="logIn">Log In</button>
+                    <p class="closeLogInForm">X</p>
+                </div>
+            </form>
+            </div>
+        </div>
+
+       <div class="greetContainer">
+        <h2>What is your name?</h2>
+        <input 
+            class="nameInput"
+            type="text"
+            placeholder="Enter in your name"
+
+        /> 
+        <h3 class="greet"></h3>
+       </div>
+       <div class="game" >
+        <h2 class="question">Do you want to play rock, paper, scissors?</h2>
+        <input  
+            type="text"
+            placeholder="Enter in your choice"
+            class="gameInput"
+        />
+        <h3 class="result"></h3>
+       </div>
+       </main>
+    </body>
+</html>
